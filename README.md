@@ -114,7 +114,7 @@ export const routes: Routes = [
 
 ```bash
 ng build --configuration production
-# Los archivos se generan en /dist/product-landing
+# Los archivos se generan en /dist/ethernalis
 ```
 
 ---

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "product-landing": {
+    "ethernalis": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,13 +17,20 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/product-landing",
+            "outputPath": "dist/ethernalis",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "tsconfig.app.json",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -48,8 +55,12 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": { "buildTarget": "product-landing:build:production" },
-            "development": { "buildTarget": "product-landing:build:development" }
+            "production": {
+              "buildTarget": "ethernalis:build:production"
+            },
+            "development": {
+              "buildTarget": "ethernalis:build:development"
+            }
           },
           "defaultConfiguration": "development"
         }
